@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <h1>React Core Concepts</h1>
-      <ToDo task="Learn React" isDone={true} t ime={time}></ToDo>
+      <ToDo task="Learn React" isDone={true} time={time}></ToDo>
       <ToDo task="Learn JS" isDone={false}></ToDo>
       <ToDo task="Learn Python" isDone={true}></ToDo>
       {/* <Student></Student>
