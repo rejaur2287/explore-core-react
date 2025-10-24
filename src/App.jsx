@@ -2,30 +2,39 @@ import "./App.css";
 import ToDo from "./Todo";
 import Actor from "./Actor";
 import Singer from "./Singer";
+import Library from "./Library";
 
 function App() {
-  const actors = [
-    "Bappa Raj",
-    "Omar Sunny",
-    "Salman Shah",
-    "Jasim",
-    "Anwar",
-    "Rajjak",
-  ];
+  // const actors = [
+  //   "Bappa Raj",
+  //   "Omar Sunny",
+  //   "Salman Shah",
+  //   "Jasim",
+  //   "Anwar",
+  //   "Rajjak",
+  // ];
 
-  const singers = [
-    { id: 1, name: "Dr. Mahfuz", age: 68 },
-    { id: 2, name: "Mila", age: 30 },
-    { id: 3, name: "Ayub Bachchu", age: 55 },
-  ];
+  // const singers = [
+  //   { id: 1, name: "Dr. Mahfuz", age: 68 },
+  //   { id: 2, name: "Mila", age: 30 },
+  //   { id: 3, name: "Ayub Bachchu", age: 55 },
+  // ];
   // const time = 50;
+  const books = [
+    { id: 1, name: "Physics", price: 600 },
+    { id: 2, name: "Math", price: 799 },
+    { id: 3, name: "Chemistry", price: 570 },
+    { id: 4, name: "Biology", price: 434 },
+  ];
   return (
     <>
       <h1>React Core Concepts</h1>
 
-      {singers.map((singer) => (
+      <Library books={books}></Library>
+
+      {/* {singers.map((singer) => (
         <Singer key={singer.id} singer={singer}></Singer>
-      ))}
+      ))} */}
 
       {/* {actors.map((actor) => (
         <Actor actor={actor}></Actor>
